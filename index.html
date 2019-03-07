@@ -1,0 +1,1661 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+	<title>cssdb</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@jon_neal">
+	<meta property="og:title" content="CSS Database">
+	<meta property="og:description" content="A comprehensive list of CSS features and their positions in the process of becoming implemented web standards.">
+	<meta property="og:image" content="https://cssdb.org/cssdb.jpg">
+	<meta property="og:site_name" content="cssdb">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://cssdb.org/">
+	<link href="favicon.ico" rel="shortcut icon">
+	<link href="style.css" rel="stylesheet">
+
+	<header class="cssdb-header">
+		<img class="cssdb-header-branding" src="cssdb.svg" alt="cssdb logo" width="90" height="90" role="presentation">
+		<div class="cssdb-header-heading">
+			<h1 class="cssdb-header-title">
+				What’s next for CSS?
+			</h1>
+			<p class="cssdb-header-description">
+				<strong>cssdb</strong> is a comprehensive list of CSS features and their positions in the process of becoming implemented web standards.
+			</p>
+		</div>
+		<a class="cssdb-header-link" href="#staging-process">What are the stages?</a>
+	</header>
+
+	<main class="cssdb-features" id="features">
+		<section class="cssdb-feature" id="all-property">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-3.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#all-property"><code>all</code> Property</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A property for defining the reset of all properties of an element
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-cascade-3/#all-shorthand">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/all" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-3">
+						<img class="cssdb-feature-specification-badge" src="badge/all-property.svg" alt="Stage 3" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>a</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>all</span>: <span class=css-value>initial</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-all" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">27</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">37</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">10</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">24</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">9.3</span></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">67</span></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"><span class="cssdb-browser-version">46</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">71</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">64</span></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"><span class="cssdb-browser-version">11.8</span></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">4</span></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"><span class="cssdb-browser-version">1.2</span></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"><span class="cssdb-browser-version">7.12</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/maximkoretskiy/postcss-initial">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="break-properties">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-3.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#break-properties">Break Properties</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						Properties for defining the break behavior between and within boxes
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-break-3/#breaking-controls">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/break-after" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-3">
+						<img class="cssdb-feature-specification-badge" src="badge/break-properties.svg" alt="Stage 3" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>a</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>break-inside</span>: <span class=css-value>avoid</span>;</span>
+  <span class=css-declaration><span class=css-property>break-before</span>: <span class=css-value>avoid-column</span>;</span>
+  <span class=css-declaration><span class=css-property>break-after</span>: <span class=css-value>always</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#multicolumn" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--ie" aria-hidden="true"><span class="cssdb-browser-version">10</span></span><span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"><span class="cssdb-browser-version">12</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">10</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">12</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">10</span></span><span class="cssdb-browser cssdb-browser--op_mini" aria-hidden="true"><span class="cssdb-browser-version">all</span></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"><span class="cssdb-browser-version">12</span></span><span class="cssdb-browser cssdb-browser--ie_mob" aria-hidden="true"><span class="cssdb-browser-version">10</span></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"><span class="cssdb-browser-version">11.8</span></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">5</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/shrpne/postcss-page-break">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="custom-properties">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-3.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#custom-properties">Custom Properties</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A syntax for defining custom values accepted by all CSS properties
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-variables-1/">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/var" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-3">
+						<img class="cssdb-feature-specification-badge" src="badge/custom-properties.svg" alt="Stage 3" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>img</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>--some-length</span>: <span class=css-value>32px</span>;</span>
+
+  <span class=css-declaration><span class=css-property>height</span>: <span class=css-value><span class=css-function>var</span>(<span class=css-var>--some-length</span>)</span>;</span>
+  <span class=css-declaration><span class=css-property>width</span>: <span class=css-value><span class=css-function>var</span>(<span class=css-var>--some-length</span>)</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-variables" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"><span class="cssdb-browser-version">16</span></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">31</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">49</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">10</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">36</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">9.3</span></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">67</span></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"><span class="cssdb-browser-version">46</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">71</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">64</span></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"><span class="cssdb-browser-version">11.8</span></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">5</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-custom-properties">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="font-variant-property">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-3.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#font-variant-property"><code>font-variant</code> Property</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A property for defining the usage of alternate glyphs in a font
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-variant">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-3">
+						<img class="cssdb-feature-specification-badge" src="badge/font-variant-property.svg" alt="Stage 3" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>h2</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>font-variant</span>: <span class=css-value>small-caps</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#font-variant-alternates" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">34</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">10</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">9.3</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">64</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-font-variant">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="gap-properties">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-3.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#gap-properties">Gap Properties</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						Properties for defining gutters within a layout
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-grid-1/#gutters">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/gap" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-3">
+						<img class="cssdb-feature-specification-badge" src="badge/gap-properties.svg" alt="Stage 3" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>.grid-1</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>gap</span>: <span class=css-value>20px</span>;</span>
+}</span></span>
+
+<span class=css-rule><span class=css-selector>.grid-2</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>column-gap</span>: <span class=css-value>40px</span>;</span>
+  <span class=css-declaration><span class=css-property>row-gap</span>: <span class=css-value>20px</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">66</span></span><span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"><span class="cssdb-browser-version">16</span></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">61</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">11.2</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/postcss-gap-properties">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="grid-layout">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-3.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#grid-layout">Grid Layout</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A syntax for using a grid concept to lay out content
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-grid-1/">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-3">
+						<img class="cssdb-feature-specification-badge" src="badge/grid-layout.svg" alt="Stage 3" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>section</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>display</span>: <span class=css-value>grid</span>;</span>
+  <span class=css-declaration><span class=css-property>grid-template-columns</span>: <span class=css-value>100px 100px 100px</span>;</span>
+  <span class=css-declaration><span class=css-property>grid-gap</span>: <span class=css-value>10px</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-grid" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"><span class="cssdb-browser-version">16</span></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">52</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">57</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">11</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">44</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">10.3</span></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">67</span></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"><span class="cssdb-browser-version">46</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">71</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">64</span></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"><span class="cssdb-browser-version">11.8</span></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">6.2</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/autoprefixer">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="media-query-ranges">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-3.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#media-query-ranges">Media Query Ranges</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A syntax for defining media query ranges using ordinary comparison operators
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/mediaqueries-4/#range-context">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Syntax_improvements_in_Level_4" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-3">
+						<img class="cssdb-feature-specification-badge" src="badge/media-query-ranges.svg" alt="Stage 3" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-atrule><span class=css-atrule-name>@media</span> <span class=css-atrule-params>(width < 480px)</span> <span class=css-block>{}</span></span>
+
+<span class=css-atrule><span class=css-atrule-name>@media</span> <span class=css-atrule-params>(480px <= width < 768px)</span> <span class=css-block>{}</span></span>
+
+<span class=css-atrule><span class=css-atrule-name>@media</span> <span class=css-atrule-params>(width >= 768px)</span> <span class=css-block>{}</span></span></pre>
+				
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-media-minmax">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="any-link-pseudo-class">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#any-link-pseudo-class"><code>:any-link</code> Hyperlink Pseudo-Class</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A pseudo-class for matching anchor elements independent of whether they have been visited
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/selectors-4/#any-link-pseudo">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/any-link-pseudo-class.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>nav :any-link > span</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>background-color</span>: <span class=css-value>yellow</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-any-link" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">21</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">24</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">7</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">15</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">8</span></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">67</span></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"><span class="cssdb-browser-version">46</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">71</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">64</span></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">5</span></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"><span class="cssdb-browser-version">1.2</span></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"><span class="cssdb-browser-version">7.12</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/postcss-pseudo-class-any-link">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="case-insensitive-attributes">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#case-insensitive-attributes">Case-Insensitive Attributes</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						An attribute selector matching attribute values case-insensitively
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/selectors-4/#attribute-case">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/case-insensitive-attributes.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>[frame=hsides i]</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>border-style</span>: <span class=css-value>solid none</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-case-insensitive" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">47</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">49</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">9</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">36</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">9</span></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"><span class="cssdb-browser-version">46</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">71</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">64</span></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"><span class="cssdb-browser-version">11.8</span></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">5</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/Semigradsky/postcss-attribute-case-insensitive">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="color-adjust">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#color-adjust"><code>color-adjust</code> Property</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						The color-adjust property is a non-standard CSS extension that can be used to force printing of background colors and images
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-color-4/#color-adjust">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/color-adjust" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/color-adjust.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>.background</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>background-color</span>:<span class=css-value>#ccc</span>;</span>
+}</span></span>
+<span class=css-rule><span class=css-selector>.background.color-adjust</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>color-adjust</span>: <span class=css-value>economy</span>;</span>
+}</span></span>
+<span class=css-rule><span class=css-selector>.background.color-adjust-exact</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>color-adjust</span>: <span class=css-value>exact</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-color-adjust" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">48</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">19</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">6</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">15</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">64</span></span>
+					</a>
+				
+			</div>
+		</section><section class="cssdb-feature" id="dir-pseudo-class">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#dir-pseudo-class"><code>:dir</code> Directionality Pseudo-Class</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A pseudo-class for matching elements based on their directionality
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/selectors-4/#dir-pseudo">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:dir" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/dir-pseudo-class.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>blockquote:dir(rtl)</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>margin-right</span>: <span class=css-value>10px</span>;</span>
+}</span></span>
+
+<span class=css-rule><span class=css-selector>blockquote:dir(ltr)</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>margin-left</span>: <span class=css-value>10px</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-dir-pseudo" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">17</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">64</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/postcss-dir-pseudo-class">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="double-position-gradients">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#double-position-gradients">Double Position Gradients</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A syntax for using two positions in a gradient.
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-images-4/#color-stop-syntax">Specification</a>
+					
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/double-position-gradients.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>.pie_chart</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>background-image</span>: <span class=css-value><span class=css-function>conic-gradient</span>(yellowgreen 40%, gold 0deg 75%, #f06 0deg)</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">71</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">71</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/postcss-double-position-gradients">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="focus-visible-pseudo-class">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#focus-visible-pseudo-class"><code>:focus-visible</code> Focus-Indicated Pseudo-Class</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A pseudo-class for matching focused elements that indicate that focus to a user
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/selectors-4/#focus-visible-pseudo">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/focus-visible-pseudo-class.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>:focus:not(:focus-visible)</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>outline</span>: <span class=css-value>0</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-focus-visible" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">4</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">64</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/WICG/focus-visible">JavaScript Library</a>
+							</li><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/postcss-focus-visible">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="focus-within-pseudo-class">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#focus-within-pseudo-class"><code>:focus-within</code> Focus Container Pseudo-Class</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A pseudo-class for matching elements that are either focused or that have focused descendants
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/selectors-4/#focus-within-pseudo">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/focus-within-pseudo-class.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>form:focus-within</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>background</span>: <span class=css-value><span class=css-function>rgba</span>(0, 0, 0, 0.3)</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-focus-within" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">52</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">60</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">11</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">47</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">10.3</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">71</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">64</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/focus-within">JavaScript Library</a>
+							</li><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/postcss-focus-within">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="gray-function">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#gray-function"><code>gray()</code> Function</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A function for specifying fully desaturated colors
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-color-4/#funcdef-gray">Specification</a>
+					
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/gray-function.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>p</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>color</span>: <span class=css-value><span class=css-function>gray</span>(50)</span>;</span>
+}</span></span></pre>
+				
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-color-gray">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="has-pseudo-class">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#has-pseudo-class"><code>:has()</code> Relational Pseudo-Class</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A pseudo-class for matching ancestor and sibling elements
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/selectors-4/#has-pseudo">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:has" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/has-pseudo-class.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>a:has(> img)</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>display</span>: <span class=css-value>block</span>;</span>
+}</span></span></pre>
+				
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/csstools/css-has-pseudo">JavaScript Library</a>
+							</li><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/csstools/css-has-pseudo">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="hexadecimal-alpha-notation">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#hexadecimal-alpha-notation">Hexadecimal Alpha Notation</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A 4 &amp; 8 character hex color notation for specifying the opacity level
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-color-4/#hex-notation">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Syntax_2" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/hexadecimal-alpha-notation.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>section</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>background-color</span>: <span class=css-value>#f3f3f3f3</span>;</span>
+  <span class=css-declaration><span class=css-property>color</span>: <span class=css-value>#0003</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-rrggbbaa" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">49</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">62</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">10</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">52</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">10</span></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">67</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">71</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">64</span></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">8.2</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-color-hex-alpha">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="hwb-function">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#hwb-function"><code>hwb()</code> Function</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A function for specifying colors by hue and then a degree of whiteness and blackness to mix into it
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-color-4/#funcdef-hwb">Specification</a>
+					
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/hwb-function.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>p</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>color</span>: <span class=css-value><span class=css-function>hwb</span>(120 44% 50%)</span>;</span>
+}</span></span></pre>
+				
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-color-hwb">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="image-set-function">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#image-set-function"><code>image-set()</code> Function</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A function for specifying image sources based on the user’s resolution
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-images-4/#image-set-notation">Specification</a>
+					
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/image-set-function.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>p</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>background-image</span>: <span class=css-value><span class=css-function>image-set</span>(
+    <span class=css-string>"foo.png"</span> 1x,
+    <span class=css-string>"foo-2x.png"</span> 2x,
+    <span class=css-string>"foo-print.png"</span> 600dpi
+  )</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-image-set" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">21</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">6</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">15</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">8</span></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">67</span></span><span class="cssdb-browser cssdb-browser--bb" aria-hidden="true"><span class="cssdb-browser-version">10</span></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"><span class="cssdb-browser-version">46</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">71</span></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"><span class="cssdb-browser-version">11.8</span></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">4</span></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"><span class="cssdb-browser-version">1.2</span></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"><span class="cssdb-browser-version">7.12</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/postcss-image-set-function">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="in-out-of-range-pseudo-class">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#in-out-of-range-pseudo-class"><code>:in-range</code> and <code>:out-of-range</code> Pseudo-Classes</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A pseudo-class for matching elements that have range limitations
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/selectors-4/#range-pseudos">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/in-out-of-range-pseudo-class.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>input:in-range</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>background-color</span>: <span class=css-value><span class=css-function>rgba</span>(0, 255, 0, 0.25)</span>;</span>
+}</span></span>
+<span class=css-rule><span class=css-selector>input:out-of-range</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>background-color</span>: <span class=css-value><span class=css-function>rgba</span>(255, 0, 0, 0.25)</span>;</span>
+  <span class=css-declaration><span class=css-property>border</span>: <span class=css-value>2px solid red</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-in-out-of-range" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">50</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">53</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">11</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">40</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">10.3</span></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">67</span></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"><span class="cssdb-browser-version">46</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">71</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">64</span></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"><span class="cssdb-browser-version">11.8</span></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">5</span></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"><span class="cssdb-browser-version">1.2</span></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"><span class="cssdb-browser-version">7.12</span></span>
+					</a>
+				
+			</div>
+		</section><section class="cssdb-feature" id="lab-function">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#lab-function"><code>lab()</code> Function</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A function for specifying colors expressed in the CIE Lab color space
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-color-4/#funcdef-lab">Specification</a>
+					
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/lab-function.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>body</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>color</span>: <span class=css-value><span class=css-function>lab</span>(240 50 20)</span>;</span>
+}</span></span></pre>
+				
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/postcss-lab-function">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="lch-function">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#lch-function"><code>lch()</code> Function</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A function for specifying colors expressed in the CIE Lab color space with chroma and hue
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-color-4/#funcdef-lch">Specification</a>
+					
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/lch-function.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>body</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>color</span>: <span class=css-value><span class=css-function>lch</span>(53 105 40)</span>;</span>
+}</span></span></pre>
+				
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/postcss-lab-function">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="logical-properties-and-values">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#logical-properties-and-values">Logical Properties and Values</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						Flow-relative (left-to-right or right-to-left) properties and values
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-logical-1/">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/logical-properties-and-values.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>span:first-child</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>float</span>: <span class=css-value>inline-start</span>;</span>
+  <span class=css-declaration><span class=css-property>margin-inline-start</span>: <span class=css-value>10px</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-logical-props" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">41</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">69</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">12.1</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">12.2</span></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">67</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">71</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">64</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/postcss-logical-properties">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="matches-pseudo-class">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#matches-pseudo-class"><code>:matches()</code> Matches-Any Pseudo-Class</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A pseudo-class for matching elements in a selector list
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/selectors-4/#matches-pseudo">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:matches" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/matches-pseudo-class.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>p:matches(:first-child, .special)</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>margin-top</span>: <span class=css-value>1em</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-matches-pseudo" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">9</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">9</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-selector-matches">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="not-pseudo-class">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#not-pseudo-class"><code>:not()</code> Negation List Pseudo-Class</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A pseudo-class for ignoring elements in a selector list
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/selectors-4/#negation-pseudo">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:not" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/not-pseudo-class.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>p:not(:first-child, .special)</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>margin-top</span>: <span class=css-value>1em</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-not-sel-list" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">9</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">9</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-selector-not">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="overflow-property">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#overflow-property"><code>overflow</code> Shorthand Property</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A property for defining <code>overflow-x</code> and <code>overflow-y</code>
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-overflow-3/#propdef-overflow">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/overflow-property.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>html</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>overflow</span>: <span class=css-value>hidden auto</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-overflow" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">68</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">61</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">68</span></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">61</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/postcss-overflow-shorthand">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="overflow-wrap-property">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#overflow-wrap-property"><code>overflow-wrap</code> Property</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A property for defining whether to insert line breaks within words to prevent overflowing
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-text-3/#overflow-wrap-property">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/overflow-wrap-property.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>p</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>overflow-wrap</span>: <span class=css-value>break-word</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#wordwrap" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"><span class="cssdb-browser-version">18</span></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">49</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">23</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">7</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">15</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">8</span></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">67</span></span><span class="cssdb-browser cssdb-browser--bb" aria-hidden="true"><span class="cssdb-browser-version">10</span></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"><span class="cssdb-browser-version">46</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">71</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">64</span></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"><span class="cssdb-browser-version">11.8</span></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">4</span></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"><span class="cssdb-browser-version">1.2</span></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"><span class="cssdb-browser-version">7.12</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/mattdimu/postcss-replace-overflow-wrap">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="place-properties">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#place-properties">Place Properties</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						Properties for defining alignment within a layout
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-align-3/#place-items-property">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/place-content" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/place-properties.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>.example</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>place-content</span>: <span class=css-value>flex-end</span>;</span>
+  <span class=css-declaration><span class=css-property>place-items</span>: <span class=css-value>center / space-between</span>;</span>
+  <span class=css-declaration><span class=css-property>place-self</span>: <span class=css-value>flex-start / center</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">59</span></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">45</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/postcss-place">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="read-only-write-pseudo-class">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#read-only-write-pseudo-class"><code>:read-only</code> and <code>:read-write</code> selectors</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						Pseudo-classes to match elements which are considered user-alterable
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/selectors-4/#rw-pseudos">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/read-only-write-pseudo-class.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>input:read-only</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>background-color</span>: <span class=css-value>#ccc</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-read-only-write" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"><span class="cssdb-browser-version">13</span></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">3</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">36</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">9</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">23</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">9</span></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">67</span></span><span class="cssdb-browser cssdb-browser--bb" aria-hidden="true"><span class="cssdb-browser-version">10</span></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"><span class="cssdb-browser-version">46</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">71</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">64</span></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"><span class="cssdb-browser-version">11.8</span></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">4</span></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"><span class="cssdb-browser-version">1.2</span></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"><span class="cssdb-browser-version">7.12</span></span>
+					</a>
+				
+			</div>
+		</section><section class="cssdb-feature" id="rebeccapurple-color">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#rebeccapurple-color"><code>rebeccapurple</code> Color</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A particularly lovely shade of purple in memory of Rebecca Alison Meyer
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-color-4/#valdef-color-rebeccapurple">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/rebeccapurple-color.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>html</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>color</span>: <span class=css-value>rebeccapurple</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-rebeccapurple" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--edge" aria-hidden="true"><span class="cssdb-browser-version">12</span></span><span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">33</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">38</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">7</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">25</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">8</span></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">67</span></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"><span class="cssdb-browser-version">46</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">71</span></span><span class="cssdb-browser cssdb-browser--and_ff" aria-hidden="true"><span class="cssdb-browser-version">64</span></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"><span class="cssdb-browser-version">11.8</span></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">4</span></span><span class="cssdb-browser cssdb-browser--baidu" aria-hidden="true"><span class="cssdb-browser-version">7.12</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-color-rebeccapurple">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="system-ui-font-family">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-2.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#system-ui-font-family"><code>system-ui</code> Font Family</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A generic font used to match the user’s interface
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://www.w3.org/TR/css-fonts-4/#system-ui-def">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#Syntax" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-2">
+						<img class="cssdb-feature-specification-badge" src="badge/system-ui-font-family.svg" alt="Stage 2" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>body</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>font-family</span>: <span class=css-value>system-ui</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#font-family-system-ui" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">56</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">11</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">43</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">11</span></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">67</span></span><span class="cssdb-browser cssdb-browser--op_mob" aria-hidden="true"><span class="cssdb-browser-version">46</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">71</span></span><span class="cssdb-browser cssdb-browser--and_uc" aria-hidden="true"><span class="cssdb-browser-version">11.8</span></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">6.2</span></span><span class="cssdb-browser cssdb-browser--and_qq" aria-hidden="true"><span class="cssdb-browser-version">1.2</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/JLHwung/postcss-font-family-system-ui">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="blank-pseudo-class">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-1.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#blank-pseudo-class"><code>:blank</code> Empty-Value Pseudo-Class</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A pseudo-class for matching form elements when they are empty
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/selectors-4/#blank">Specification</a>
+					
+					<a class="cssdb-feature-specification-badge-link" href="#stage-1">
+						<img class="cssdb-feature-specification-badge" src="badge/blank-pseudo-class.svg" alt="Stage 1" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>input:blank</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>background-color</span>: <span class=css-value>yellow</span>;</span>
+}</span></span></pre>
+				
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/csstools/css-blank-pseudo">JavaScript Library</a>
+							</li><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/csstools/css-blank-pseudo">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="color-functional-notation">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-1.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#color-functional-notation">Color Functional Notation</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A space and slash separated notation for specifying colors
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/css-color/#ref-for-funcdef-rgb%E2%91%A1%E2%91%A0">Specification</a>
+					
+					<a class="cssdb-feature-specification-badge-link" href="#stage-1">
+						<img class="cssdb-feature-specification-badge" src="badge/color-functional-notation.svg" alt="Stage 1" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>em</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>background-color</span>: <span class=css-value><span class=css-function>hsl</span>(120deg 100% 25%)</span>;</span>
+  <span class=css-declaration><span class=css-property>box-shadow</span>: <span class=css-value>0 0 0 10px <span class=css-function>hwb</span>(120deg 100% 25% / 80%)</span>;</span>
+  <span class=css-declaration><span class=css-property>color</span>: <span class=css-value><span class=css-function>rgb</span>(0 255 0)</span>;</span>
+}</span></span></pre>
+				
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/postcss-color-functional-notation">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="custom-media-queries">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-1.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#custom-media-queries">Custom Media Queries</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						An at-rule for defining aliases that represent media queries
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/mediaqueries-5/#at-ruledef-custom-media">Specification</a>
+					
+					<a class="cssdb-feature-specification-badge-link" href="#stage-1">
+						<img class="cssdb-feature-specification-badge" src="badge/custom-media-queries.svg" alt="Stage 1" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-atrule><span class=css-atrule-name>@custom-media</span> <span class=css-atrule-params><span class=css-var>--narrow-window</span> (max-width: 30em)</span>;</span>
+
+<span class=css-atrule><span class=css-atrule-name>@media</span> <span class=css-atrule-params>(<span class=css-var>--narrow-window</span>)</span> <span class=css-block>{}</span></span></pre>
+				
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-custom-media">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="custom-selectors">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-1.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#custom-selectors">Custom Selectors</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						An at-rule for defining aliases that represent selectors
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/css-extensions/#custom-selectors">Specification</a>
+					
+					<a class="cssdb-feature-specification-badge-link" href="#stage-1">
+						<img class="cssdb-feature-specification-badge" src="badge/custom-selectors.svg" alt="Stage 1" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-atrule><span class=css-atrule-name>@custom-selector</span> <span class=css-atrule-params><span class=css-var>:--heading</span> h1, h2, h3, h4, h5, h6</span>;</span>
+
+<span class=css-rule><span class=css-selector>article <span class=css-var>:--heading</span> + p</span> <span class=css-block>{}</span></span></pre>
+				
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/postcss/postcss-custom-selectors">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="nesting-rules">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-1.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#nesting-rules">Nesting Rules</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A syntax for nesting relative rules within rules
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/css-nesting-1/">Specification</a>
+					
+					<a class="cssdb-feature-specification-badge-link" href="#stage-1">
+						<img class="cssdb-feature-specification-badge" src="badge/nesting-rules.svg" alt="Stage 1" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>article</span> <span class=css-block>{
+  <span class=css-rule><span class=css-selector>& p</span> <span class=css-block>{
+    <span class=css-declaration><span class=css-property>color</span>: <span class=css-value>#333</span>;</span>
+  }</span></span>
+}</span></span></pre>
+				
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/postcss-nesting">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="overscroll-behavior-property">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-1.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#overscroll-behavior-property"><code>overscroll-behavior</code> Property</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						Properties for controlling when the scroll position of a scroll container reaches the edge of a scrollport
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/css-overscroll-behavior">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-1">
+						<img class="cssdb-feature-specification-badge" src="badge/overscroll-behavior-property.svg" alt="Stage 1" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>.messages</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>height</span>: <span class=css-value>220px</span>;</span>
+  <span class=css-declaration><span class=css-property>overflow</span>: <span class=css-value>auto</span>;</span>
+  <span class=css-declaration><span class=css-property>overscroll-behavior-y</span>: <span class=css-value>contain</span>;</span>
+}</span></span>
+
+<span class=css-rule><span class=css-selector>body</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>margin</span>: <span class=css-value>0</span>;</span>
+  <span class=css-declaration><span class=css-property>overscroll-behavior</span>: <span class=css-value>none</span>;</span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#css-overscroll-behavior" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">59</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">65</span></span><span class="cssdb-browser cssdb-browser--opera" aria-hidden="true"><span class="cssdb-browser-version">52</span></span><span class="cssdb-browser cssdb-browser--android" aria-hidden="true"><span class="cssdb-browser-version">67</span></span><span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">71</span></span><span class="cssdb-browser cssdb-browser--samsung" aria-hidden="true"><span class="cssdb-browser-version">8.2</span></span>
+					</a>
+				
+			</div>
+		</section><section class="cssdb-feature" id="prefers-color-scheme-query">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-1.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#prefers-color-scheme-query"><code>prefers-color-scheme</code> Media Query</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A media query to detect if the user has requested the system use a light or dark color theme
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme">Specification</a>
+					
+					<a class="cssdb-feature-specification-badge-link" href="#stage-1">
+						<img class="cssdb-feature-specification-badge" src="badge/prefers-color-scheme-query.svg" alt="Stage 1" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>body</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>background-color</span>: <span class=css-value>white</span>;</span>
+  <span class=css-declaration><span class=css-property>color</span>: <span class=css-value>black</span>;</span>
+}</span></span>
+
+<span class=css-atrule><span class=css-atrule-name>@media</span> <span class=css-atrule-params>(prefers-color-scheme: dark)</span> <span class=css-block>{
+  <span class=css-rule><span class=css-selector>body</span> <span class=css-block>{
+    <span class=css-declaration><span class=css-property>background-color</span>: <span class=css-value>black</span>;</span>
+    <span class=css-declaration><span class=css-property>color</span>: <span class=css-value>white</span>;</span>
+  }</span></span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#prefers-color-scheme" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">12.1</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">12.1</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/csstools/css-prefers-color-scheme">JavaScript Library</a>
+							</li><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/csstools/css-prefers-color-scheme">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="prefers-reduced-motion-query">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-1.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#prefers-reduced-motion-query"><code>prefers-reduced-motion</code> Media Query</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A media query to detect if the user has requested less animation and general motion on the page
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-motion">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-1">
+						<img class="cssdb-feature-specification-badge" src="badge/prefers-reduced-motion-query.svg" alt="Stage 1" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>.animation</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>animation</span>: <span class=css-value>vibrate 0.3s linear infinite both</span>;</span> 
+}</span></span>
+
+<span class=css-atrule><span class=css-atrule-name>@media</span> <span class=css-atrule-params>(prefers-reduced-motion: reduce)</span> <span class=css-block>{
+  <span class=css-rule><span class=css-selector>.animation</span> <span class=css-block>{
+    <span class=css-declaration><span class=css-property>animation</span>: <span class=css-value>none</span>;</span>
+  }</span></span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/#prefers-reduced-motion" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--firefox" aria-hidden="true"><span class="cssdb-browser-version">63</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">74</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">11</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">10.3</span></span>
+					</a>
+				
+			</div>
+		</section><section class="cssdb-feature" id="where-pseudo-class">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-1.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#where-pseudo-class"><code>:where()</code> Zero-Specificity Pseudo-Class</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A pseudo-class for matching elements in a selector list without contributing specificity
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/selectors-4/#where-pseudo">Specification</a>
+					
+					<a class="cssdb-feature-specification-badge-link" href="#stage-1">
+						<img class="cssdb-feature-specification-badge" src="badge/where-pseudo-class.svg" alt="Stage 1" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-rule><span class=css-selector>a:where(:not(:hover))</span> <span class=css-block>{
+  <span class=css-declaration><span class=css-property>text-decoration</span>: <span class=css-value>none</span>;</span>
+}</span></span></pre>
+				
+				
+			</div>
+		</section><section class="cssdb-feature" id="environment-variables">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-0.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#environment-variables">Custom Environment Variables</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						A syntax for using custom values accepted by CSS globally
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://drafts.csswg.org/css-env-1/">Specification</a>
+					<a class="cssdb-feature-mdn-badge-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/env" target="_blank">
+							<img class="cssdb-feature-mdn-badge" src="https://img.shields.io/badge/-docs-green.svg?colorA=a30000&colorB=919393&logoWidth=40&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNjAgMTAyLjgiPjxwYXRoIGQ9Ik0zNDMuOCA3My43Yy0uNy4yLTEuMy4zLTEuOS4zLTIuMSAwLTMuMS0uOS0zLjEtMy41VjUxYzAtMTAuMy04LjItMTUuMy0xNy45LTE1LjMtNy40IDAtMTEuNC45LTE5LjMgNC4xTDMwMCA1MC4ybDEwLjMgMS4xIDEuNS01LjFjMi4xLTEuMSA0LjItMS4zIDYuOS0xLjMgNy4zIDAgNy40IDUuNSA3LjQgMTAuMXYxLjVjLTIuMy0uMy00LjktLjQtNy40LS40LTEwLjMgMC0yMSAyLjYtMjEgMTMuNyAwIDkuNCA3LjQgMTIuOSAxMy45IDEyLjkgNy4zIDAgMTEuOS00LjQgMTQuNS05IC42IDUuNSAzLjkgOSA5LjkgOSAyLjggMCA1LjctLjggOC4xLTIuMWwtLjMtNi45em0tMjcuNi0uM2MtMy45IDAtNS4zLTIuMy01LjMtNS4yIDAtNC45IDQtNi4yIDguNi02LjIgMi4xIDAgNC40LjMgNi41LjYtLjMgNy41LTUuMiAxMC44LTkuOCAxMC44em0tMTcuMy02MC41bC0xOS41IDY4LjdoLTEyLjdsMTkuNS02OC43aDEyLjd6bS0yNi4yIDBsLTE5LjUgNjguN2gtMTIuN0wyNjAgMTIuOWgxMi43em0tNTQgMjMuN2gxMy41djE2LjJoLTEzLjVWMzYuNnptMCAyOC45aDEzLjV2MTYuMmgtMTMuNVY2NS41em0tMTkuNy0uNmwxMC4yIDEtMi44IDE1LjhoLTM5LjNsLTEuMy02LjggMjQuOC0yOC41aC0xNC4xbC0yIDctOS4zLTEgMS42LTE1LjhoMzkuNWwxIDYuOC0yNSAyOC41aDE0LjZsMi4xLTd6bS02NC41LTI5LjJjLTE2LjIgMC0yNC4yIDEwLjktMjQuMiAyNC4xIDAgMTQuNCA5LjYgMjIuOSAyMy41IDIyLjkgMTQuNCAwIDI0LjgtOS4xIDI0LjgtMjMuNSAwLTEyLjYtNy45LTIzLjUtMjQuMS0yMy41em0tLjMgMzdjLTcgMC0xMC42LTYtMTAuNi0xMy44IDAtOC41IDQuMS0xMy40IDEwLjctMTMuNCA2LjEgMCAxMSA0LjEgMTEgMTMuMiAwIDguNy00LjQgMTQtMTEuMSAxNHptLTM1LjUtLjloNnY5LjhIODUuOVY1Ni4zYzAtNy44LTIuNi0xMC44LTcuNy0xMC44LTYuMiAwLTguNyA0LjQtOC43IDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgtNi4yIDAtOC43IDQuNC04LjcgMTAuN3YxNS43aDguNnY5LjhIMjEuNHYtOS44aDZWNDYuNGgtNnYtOS44aDE4Ljl2Ni44YzIuNy00LjggNy40LTcuNyAxMy43LTcuNyA2LjUgMCAxMi41IDMuMSAxNC43IDkuNyAyLjUtNiA3LjYtOS43IDE0LjctOS43IDguMSAwIDE1LjUgNC45IDE1LjUgMTUuNnYyMC41eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Mozilla Developer Network Documentation" width="86" height="20">
+						</a>
+					<a class="cssdb-feature-specification-badge-link" href="#stage-0">
+						<img class="cssdb-feature-specification-badge" src="badge/environment-variables.svg" alt="Stage 0" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-atrule><span class=css-atrule-name>@media</span> <span class=css-atrule-params>(max-width: <span class=css-function>env</span>(<span class=css-var>--brand-small</span>))</span> <span class=css-block>{
+  <span class=css-rule><span class=css-selector>body</span> <span class=css-block>{
+    <span class=css-declaration><span class=css-property>padding</span>: <span class=css-value><span class=css-function>env</span>(<span class=css-var>--brand-spacing</span>)</span>;</span>
+  }</span></span>
+}</span></span></pre>
+				<a class="cssdb-feature-caniuse" href="https://caniuse.com/" target="_blank" aria-label="can i use browser support">
+						<span class="cssdb-browser cssdb-browser--and_chr" aria-hidden="true"><span class="cssdb-browser-version">69</span></span><span class="cssdb-browser cssdb-browser--chrome" aria-hidden="true"><span class="cssdb-browser-version">69</span></span><span class="cssdb-browser cssdb-browser--ios_saf" aria-hidden="true"><span class="cssdb-browser-version">11.2</span></span><span class="cssdb-browser cssdb-browser--safari" aria-hidden="true"><span class="cssdb-browser-version">11.2</span></span>
+					</a>
+				<div class="cssdb-feature-polyfills">
+						Use with a
+						<ul class="cssdb-feature-polyfill-list"><li class="cssdb-feature-polyfill-item">
+								<a class="cssdb-feature-polyfill-link" href="https://github.com/jonathantneal/postcss-env-function">PostCSS Plugin</a>
+							</li></ul>
+					</div>
+			</div>
+		</section><section class="cssdb-feature" id="when-else-rules">
+			<header class="cssdb-feature-header">
+				<img class="cssdb-feature-stage" src="stage-0.svg" alt="" width="62" height="62" role="presentation">
+				<div class="cssdb-feature-header-content">
+					<h2 class="cssdb-feature-heading">
+						<a href="#when-else-rules">When/Else Rules</a>
+					</h2>
+					<p class="cssdb-feature-description">
+						At-rules for specifying media queries and support queries in a single grammar
+					</p>
+				</div>
+			</header>
+			<div class="cssdb-feature-content">
+				<p class="cssdb-feature-specification">
+					<a class="cssdb-feature-specification-link" href="https://tabatkins.github.io/specs/css-when-else/">Specification</a>
+					
+					<a class="cssdb-feature-specification-badge-link" href="#stage-0">
+						<img class="cssdb-feature-specification-badge" src="badge/when-else-rules.svg" alt="Stage 0" width="94" height="20">
+					</a>
+				</p>
+				<pre class="cssdb-feature-example" dir="ltr"><span class=css-atrule><span class=css-atrule-name>@when</span> <span class=css-atrule-params><span class=css-function>media</span>(width >= 640px) and (<span class=css-function>supports</span>(display: flex) or <span class=css-function>supports</span>(display: grid))</span> <span class=css-block>{
+  <span class=css-comment>/* A */</span>
+}</span></span> <span class=css-atrule><span class=css-atrule-name>@else</span> <span class=css-atrule-params><span class=css-function>media</span>(pointer: coarse)</span> <span class=css-block>{
+  <span class=css-comment>/* B */</span>
+}</span></span> <span class=css-atrule><span class=css-atrule-name>@else</span><span class=css-atrule-params></span> <span class=css-block>{
+  <span class=css-comment>/* C */</span>
+}</span></span></pre>
+				
+				
+			</div>
+		</section>
+	</main>
+
+	<aside class="cssdb-process">
+		<h2><a id="staging-process" href="#staging-process">The Staging Process</a></h2><p>Staging processes allow developers to accomplish real things and get involved
+in the creation of standards, testing, feedback, and new use cases.</p>
+<p>This staging process reflects the real-life stability of new CSS features.</p>
+<p>You can read an <a href="http://fantasai.inkedblade.net/weblog/2011/inside-csswg/process">inside view of the CSSWG</a> to learn about the official
+(and unofficial) development stages of CSS specifications. In reality,
+specifications and browser implementations happen out of sync. For example,
+there have been stable CSS features missing in all browsers, while other CSS
+features developed outside the <a href="https://www.w3.org/">W3C</a> have appeared in browsers. This is too
+ambiguous for the web development community, and a more accountable process
+is desired.</p>
+<h3><a id="stage-0" href="#stage-0">Stage 0: Aspirational</a></h3><img src="https://cssdb.org/stage-0.svg" alt="" align="left" width="90" height="90">
+
+<blockquote>
+<p>“This is a crazy idea.”</p>
+</blockquote>
+<p>An <strong>Unofficial Draft</strong> or <strong>Editor’s Draft</strong> <a href="#what-is-a-champion">championed</a> by a
+<a href="https://wiki.csswg.org/spec">W3C Working Group</a> Member. It should be considered highly unstable and subject
+to change. Stage 0 features are open to ideas and discussion, but may not be
+considered serious.</p>
+<hr>
+<h3><a id="stage-1" href="#stage-1">Stage 1: Experimental</a></h3><img src="https://cssdb.org/stage-1.svg" alt="" align="left" width="90" height="90">
+
+<blockquote>
+<p>“This idea might not be crazy.”</p>
+</blockquote>
+<p>An <strong>Editor’s Draft</strong> or early <strong>Working Draft</strong> <a href="#what-is-a-champion">championed</a> by a
+<a href="https://wiki.csswg.org/spec">W3C Working Group</a>. It should be considered highly unstable and subject to
+change. Stage 1 features are recognized as a real problem, but they may not be
+tied to any particular solution.</p>
+<hr>
+<h3><a id="stage-2" href="#stage-2">Stage 2: Allowable</a></h3><img src="https://cssdb.org/stage-2.svg" alt="" align="left" width="90" height="90">
+
+<blockquote>
+<p>“This idea is not crazy.”</p>
+</blockquote>
+<p>A <strong>Working Draft</strong> <a href="#what-is-a-champion">championed</a> by a <a href="https://wiki.csswg.org/spec">W3C Working Group</a>. It should be
+considered relatively unstable and subject to change. Stage 2 features are tied
+to a particular way of solving a problem.</p>
+<hr>
+<h3><a id="stage-3" href="#stage-3">Stage 3: Embraced</a></h3><img src="https://cssdb.org/stage-3.svg" alt="" align="left" width="90" height="90">
+
+<blockquote>
+<p>“This idea is becoming part of the web.”</p>
+</blockquote>
+<p>A <strong>Candidate Recommendation</strong> <a href="#what-is-a-champion">championed</a> by a <a href="https://wiki.csswg.org/spec">W3C Working Group</a>, usually
+implemented by at least 2 <a href="#recognized-browser-vendors">recognized browser vendors</a>, possibly behind a flag. |
+It should be considered stable and subject to little change. Stage 3 features
+will likely become a standard.</p>
+<hr>
+<h3><a id="stage-4" href="#stage-4">Stage 4: Standardized</a></h3><img src="https://cssdb.org/stage-4.svg" alt="" align="left" width="90" height="90">
+
+<blockquote>
+<p>“This idea is part of the web.”</p>
+</blockquote>
+<p>A <strong>Recommendation</strong> <a href="#what-is-a-champion">championed</a> by the <a href="https://www.w3.org/">W3C</a>. It should be implemented by all
+<a href="#recognized-browser-vendors">recognized browser vendors</a>. Stage 4 features are web standards.</p>
+<hr>
+<h3><a id="rejected" href="#rejected">Rejected</a></h3><img src="https://cssdb.org/stage-X.svg" alt="" align="left" width="90" height="90">
+
+<blockquote>
+<p>“I had no idea what I was doing.”</p>
+</blockquote>
+<p>Any specification that has been rejected or neglected by its editor, or
+formally rejected by a <a href="https://wiki.csswg.org/spec">W3C Working Group</a>.</p>
+<hr>
+<h2><a id="terminology" href="#terminology">Terminology</a></h2><h3><a id="recognized-browser-vendors" href="#recognized-browser-vendors">Recognized Browser Vendors</a></h3><p>Recognized browser vendors include, in alphabetical order; Apple, Google,
+Microsoft, Mozilla, and Opera.</p>
+<h3><a id="what-is-a-champion" href="#what-is-a-champion">What is a champion?</a></h3><p>A champion is the person or group responsible for advocating a new feature to
+completion, performing the legwork necessary to ensure the concerns of
+interested parties are identified and incorporated into the proposal.</p>
+
+	</aside>
+
+	<p>
+		Want to contribute? Checkout the
+		<a href="https://github.com/csstools/cssdb">cssdb on GitHub</a>
+	</p>
+
+	<script>
+	document.addEventListener('click', function (event) {
+		var closestHash = event.target.closest && event.target.closest('a[href^="#"]');
+
+		if (closestHash) {
+			var target = document.getElementById(closestHash.hash.slice(1));
+			var easing = function (t) {
+				return t * (2 - t);
+			};
+
+			if (target) {
+				event.preventDefault();
+
+				scrollTo(target, 300, easing, function () {
+					location.hash = closestHash.hash;
+				});
+			}
+		}
+	});
+
+	function scrollTo(target, duration, easing, callback) {
+		var start = window.pageYOffset;
+		var startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+
+		var documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
+		var windowHeight = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+		var targetOffset = typeof target === 'number' ? target : target.offsetTop;
+		var targetOffsetToScroll = Math.round(documentHeight - targetOffset < windowHeight ? documentHeight - windowHeight : targetOffset);
+
+		scroll();
+
+		function scroll() {
+			var now = 'now' in window.performance ? performance.now() : new Date().getTime();
+			var time = Math.min(1, ((now - startTime) / duration));
+			var timeFunction = easing(time);
+
+			window.scroll(0, Math.ceil((timeFunction * (targetOffsetToScroll - start)) + start));
+
+			if (window.pageYOffset !== targetOffsetToScroll) {
+				requestAnimationFrame(scroll);
+			} else {
+				window.scroll(0, start);
+
+				callback();
+			}
+		}
+	}
+	</script>
+	<script src="https://unpkg.com/css-prefers-color-scheme@3.0.0/browser.min.js"></script>
+	<script>
+	prefersColorScheme=initPrefersColorScheme();
+
+	(function () {
+		prefersColorScheme.onChange = function () {
+			if (!isSchemeManuallyChanging) {
+				$inputSystem.checked = true;
+			}
+		};
+
+		var schemes = { system: prefersColorScheme.scheme };
+		var isSchemeManuallyChanging = false;
+
+		var create = function (type, attrs) {
+			var $element = document.createElement(type);
+
+			for (var attr in Object(attrs)) {
+				$element.setAttribute(attr, attrs[attr]);
+			}
+
+			return $element;
+		}
+
+		var $toggle = create('span', { class: 'cssdb-color_scheme_toggle', role: 'group', title: 'select a color scheme' });
+		var $inputDark   = $toggle.appendChild(create('input', { type: 'radio', name: 'scheme', value: 'dark',   'aria-label': 'dark color scheme' }));
+		var $inputSystem = $toggle.appendChild(create('input', { type: 'radio', name: 'scheme', value: 'system', 'aria-label': 'system color scheme', checked: '' }));
+		var $inputLight  = $toggle.appendChild(create('input', { type: 'radio', name: 'scheme', value: 'light',  'aria-label': 'light color scheme' }));
+		var $label = $toggle.appendChild(create('label'));
+
+		$toggle.addEventListener('change', function (event) {
+			var scheme = event.target.value;
+
+			isSchemeManuallyChanging = true;
+			prefersColorScheme.scheme = schemes[scheme] || scheme;
+			isSchemeManuallyChanging = false;
+		});
+
+		document.body.insertBefore($toggle, document.querySelector('main'));
+	})();
+	</script>
+</html>
